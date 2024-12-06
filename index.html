@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" language="javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#hobbies" onclick="toggleMenu();">Hobbies</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Creating Banner Layout in HTML -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br> <span>M.Tamim Lodin</span></h2>
+            <h3>I'm a Data Scientist.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <!-- Creating About Me Layout in HTML -->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know me</p>
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src="images/myPic2.png" alt="" class="proPic">
+            </div>
+            <div class="contentBx w50">
+                <h3>Who am i?</h3>
+                <h2>I'm <b>M Tamim Lodin</b>, a Data Scientist and Front End Web Developer</h2>
+                <p>I am passionate about leveraging data to solve real-world problems and drive decision-making. With expertise in data analysis, machine learning, and data visualization, I specialize in creating predictive models and interactive dashboards that turn complex data into actionable insights. My experience includes projects involving advanced analytics, statistical modeling, and cloud computing, ensuring impactful and data-driven outcomes for businesses.</p><br>  
+                <p>As a front-end web developer, I focus on crafting intuitive and responsive user interfaces using HTML, CSS, JavaScript, and modern frameworks. My work includes building user-centric applications. I am committed to delivering seamless user experiences while adhering to the latest web standards and trends.</p>  
+                <div class="heading bottom">
+                    <a href="images/resme.pdf" class="btn round">Download CV</a>
+                    <div class="bt">
+                        <b>Name:</b> M Tamim Lodin<br>
+                        <b>Age:</b> 22
+                    </div>
+                    <div class="bt">
+                        <b>Email:</b> ludintamim@gmail.com<br>
+                        <b>Location:</b> Malaysia
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Services Layout in HTML -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>My Services</h2>
+            <p><strong>Unleashing the Power of Your Data</strong></p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <i class="fa fa-bar-chart fa-4x"></i>
+                <h3>Data Analysis</h3>
+                <p>Transform raw data into actionable insights using advanced analytical techniques and tools.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-line-chart fa-4x"></i>
+                <h3>Machine Learning Models</h3>
+                <p>Develop and deploy predictive models to automate decision-making and forecast trends.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-pie-chart fa-4x"></i>
+                <h3>Data Visualization</h3>
+                <p>Create interactive dashboards and visualizations using Tableau, Power BI, and Matplotlib.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-database fa-4x"></i>
+                <h3>Database Management</h3>
+                <p>Design and manage efficient databases to ensure smooth data handling and storage.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-html5 fa-4x"></i>
+                <h3>Web Development</h3>
+                <p>Build responsive and user-friendly web applications using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-cloud fa-4x"></i>
+                <h3>Cloud Computing</h3>
+                <p>Leverage platforms like AWS and Google Cloud for scalable and reliable solutions.</p>
+            </div>
+        </div>
+    </section>
+        <!-- Creating Work Layout in HTML -->
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>My Latest Work</h2>
+            <p>Showcasing some of my <b>Projects</b></p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <a href="https://github.com/Tamim-Lodin/SpaceX.git" target="_blank">
+                    <img src="images/spacex.jpg" alt="">
+                    <p>SpaceX Rocket Landing Success - A comprehensive capstone project in 2024 focused on analyzing SpaceX launch data. It involved creating visualizations, building predictive models, and exploring factors contributing to rocket landing success.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://github.com/Tamim-Lodin/Machine-Learning-Model-for-Diabetes-Prediction.git" target="_blank">
+                    <img src="images/diabete.jpg" alt="">
+                    <p>Predicting Diabetes in Women of Pima Indian Heritage - A 2024 project that developed a machine learning model to predict diabetes. Key steps included data preprocessing, visualization, model building, and evaluating performance metrics.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://github.com/Tamim-Lodin/AIU-Shop-Management-System.git" target="_blank">
+                    <img src="images/shop.jpg" alt="">
+                    <p>AIU Shop - A fully functional end-to-end web application developed in 2024 for inventory management. It includes user authentication, sales tracking, and employee management, built with PHP, MySQL, and JavaScript.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://github.com/Tamim-Lodin/word_lenght_calculator.git" target="_blank">
+                    <img src="images/word_length.jpg" alt="">
+                    <p>Word Length Calculator - A front-end project completed in 2024, providing a user-friendly interface to calculate the length of words in a given text. This project focuses on JavaScript interactivity and clean UI design.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://github.com/Tamim-Lodin/Analogue_clock.git" target="_blank">
+                    <img src="images/clockk.jpg" alt="">
+                    <p>Beautiful Analogue Clock - A visually appealing analogue clock designed with a primary focus on JavaScript functionality, enhancing interactive design skills through dynamic and real-time updates.</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://github.com/Tamim-Lodin/BMI_cal.git" target="_blank">
+                    <img src="images/bmii.jpg" alt="">
+                    <p>BMI Calculator - One of the more complex front-end projects involving a fully responsive design, precise JavaScript-based calculations, and a sleek user interface for a seamless user experience.</p>
+                </a>
+            </div>
+            <div class="heading">
+                <a href="https://github.com/Tamim-Lodin" target="_blank" class="btn" style="color:#fff;">View All My Projects</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="testimonial" id="hobbies">
+        <div class="heading white">
+            <h2>Hobbies</h2>
+            <p>Activities I enjoy in my free time</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>I love the strategy and focus required in chess, constantly improving my skills with practice.</p>
+                <h3>Chess</h3>
+            </div>
+            <div class="testimonialBx">
+                <p>Playing football keeps me active and helps me build teamwork and leadership skills on the field.</p>
+                <h3>Football</h3>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Creating Contact Layout in HTML -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me anytimes</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Always available to work<br>Feel free to contact me!</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Alor Setar,<br>05200 Kedah<br>Malaysia</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone no :</h3>
+                            <p>+60182690096</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>ludintamim@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Connect</h3>
+                    <div class="boxSocial">
+                        <!--
+                        <div class="icon">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </div>
+                            -->
+                        <div class="icon">
+                            <a href="https://x.com/Tamim43210?t=3W0R_qgAA8eWELcSf6DF8g&s=09" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/mohammad-tamim-lodin" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/m_tamim321/profilecard/?igsh=ZDVxYTFrMmtwbnFn" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name" name="">
+                    <input type="email" placeholder="Email" name="">
+                    <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" name="">
+                </form>
+            </div>-->
+
+            <div class="formBx">
+                <form action="send_email.php" method="POST">
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>          
+        </div>
+    </section>
+
+    <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+        <p>&copy; 2024, tammimimafa.com, Allrights reserved</p>
+    </footer>
+</body>
+</html>
